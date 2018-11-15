@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
     ports:
     - 6603:3306
-  appsub:
+  application:
     build: .
     container_name: appsub
     depends_on: [database]
